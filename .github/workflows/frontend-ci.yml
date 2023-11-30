@@ -42,7 +42,7 @@ jobs:
         run: cd starter/frontend && npm ci
       
       - name: run test
-        run: cd starter/frontend && npm test
+        run: cd starter/frontend/src && npm test
   
   build:
     needs: [lint, test]
